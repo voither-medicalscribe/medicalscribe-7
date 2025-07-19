@@ -1,0 +1,15 @@
+# Ferramentas de desenvolvimento
+pytest==7.4.4
+pytest-asyncio==0.23.2
+pytest-cov==4.1.0
+black==23.12.1
+flake8==7.0.0
+mypy==1.8.0
+pre-commit==3.6.0
+
+# Azure Functions Core Tools para desenvolvimento local
+azure-functions-core-tools==4.0.5455
+
+# Tipos para type checking
+types-requests==2.31.0.10
+types-PyJWT==2.8.0.0

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "production": {
+      "appLocation": ".",
+      "outputLocation": "dist",
+      "apiLocation": "api",
+      "appBuildCommand": "npm run build",
+      "apiBuildCommand": "npm run build:api",
+      "appName": "voither-medicalscribe",
+      "resourceGroup": "voither-medicalscribe-rg"
+    }
+  }
+}

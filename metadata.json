@@ -1,0 +1,8 @@
+{
+  "name": "Voither MedicalScribe",
+  "description": "Uma aplicação de assistente clínico para psiquiatras que transcreve consultas em tempo real e utiliza IA para gerar documentação e fornecer suporte consultivo.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "prompt": ""
+}

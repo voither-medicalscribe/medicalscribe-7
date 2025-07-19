@@ -1,0 +1,10 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=<your-storage-account>;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AZURE_KEYVAULT_URL": "https://<your-keyvault>.vault.azure.net/",
+    "AZURE_FUNCTIONS_ENVIRONMENT": "Production",
+    "APPLICATIONINSIGHTS_CONNECTION_STRING": "InstrumentationKey=<YOUR_KEY>;IngestionEndpoint=https://brazilsouth-1.in.applicationinsights.azure.com/"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "PYTHON_ENABLE_WORKER_DEPENDENCIES": "1",
+    "AzureSignalRConnectionString": "<your-signalr-connection-string>",
+    "AzureStorageConnectionString": "DefaultEndpointsProtocol=https;AccountName=<your-storage>;AccountKey=<YOUR_KEY>;EndpointSuffix=core.windows.net"
+  },
+  "Host": {
+    "LocalHttpPort": 7071,
+    "CORS": "*",
+    "CORSCredentials": false
+  }
+}

@@ -1,0 +1,54 @@
+# Azure Functions
+azure-functions==1.20.0
+
+# Azure SDK - Core
+azure-identity==1.16.1
+azure-core==1.30.2
+azure-keyvault-secrets==4.8.0
+
+# Azure Cognitive Services
+azure-cognitiveservices-speech==1.38.0
+azure-ai-textanalytics==5.3.0
+
+# Azure Storage
+azure-storage-blob==12.20.0
+
+# Azure Monitoring
+azure-monitor-opentelemetry==1.4.0
+opencensus-ext-azure==1.1.13
+
+# MongoDB
+pymongo[srv]==4.7.2
+dnspython==2.6.1
+
+# Autenticação e Segurança
+PyJWT[crypto]==2.8.0
+msal==1.28.0
+cryptography==42.0.8
+
+# OpenAI
+openai==1.35.7
+
+# API e Web
+aiohttp==3.9.5
+requests==2.32.3
+python-multipart==0.0.9
+
+# Utilitários
+python-dateutil==2.9.0
+python-dotenv==1.0.1
+typing-extensions==4.12.2
+
+# Serialização
+bson==0.5.10
+
+# Machine Learning (para análise dimensional)
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.1
+
+# Email
+sendgrid==6.11.0
+
+# Validação e Testes
+pydantic==2.7.4
