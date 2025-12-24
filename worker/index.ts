@@ -222,7 +222,7 @@ async function handlePatientManagement(request: Request, env: Env): Promise<Resp
       const body: any = await request.json();
       return jsonResponse(
         {
-          id: crypto.randomUUID(),
+          id: crypto.randomUUID(), // Web Crypto API - natively supported in Cloudflare Workers
           ...body,
           created_at: new Date().toISOString(),
         },
@@ -295,7 +295,7 @@ async function handleRealtimeTranscription(
   try {
     const body: any = await request.json();
     const action = body.action;
-    const sessionId = body.sessionId || crypto.randomUUID();
+    const sessionId = body.sessionId || crypto.randomUUID(); // Web Crypto API - natively supported in Workers
 
     if (action === 'start') {
       // Start transcription session
