@@ -1,0 +1,20 @@
+# Cloudflare Worker Development Environment Variables
+# Copy this file to .dev.vars and fill in your actual values
+# DO NOT commit .dev.vars to git!
+
+# Azure Speech Service
+AZURE_SPEECH_KEY=your-azure-speech-key-here
+AZURE_SPEECH_REGION=your-region-here
+
+# Azure OpenAI
+AZURE_OPENAI_ENDPOINT=https://your-instance.openai.azure.com/
+AZURE_OPENAI_KEY=your-azure-openai-key-here
+AZURE_OPENAI_DEPLOYMENT=your-deployment-name
+
+# MongoDB (optional, if using external MongoDB)
+MONGODB_CONNECTION_STRING=mongodb+srv://user:pass@cluster.mongodb.net/dbname
+MONGODB_DATABASE=voither_medical
+
+# Other Azure services
+AZURE_STORAGE_CONNECTION_STRING=your-storage-connection-string
+AZURE_SIGNALR_CONNECTION_STRING=your-signalr-connection-string

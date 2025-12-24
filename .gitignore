@@ -91,3 +91,10 @@ coverage/
 
 # Static Web Apps
 .swa/
+
+# Cloudflare Workers
+.wrangler/
+wrangler.toml
+.dev.vars
+.mf/
+

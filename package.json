@@ -6,8 +6,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:worker": "wrangler dev",
     "build": "tsc && vite build",
-    "build:api": "echo 'API build not needed - Azure Functions will build Python code'",
+    "build:worker": "echo 'Worker code is built by wrangler'",
+    "deploy:worker": "wrangler deploy",
     "preview": "vite preview",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
@@ -23,6 +25,7 @@
     "react-router-dom": "^7.7.0"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20251224.0",
     "@types/node": "^20.14.10",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
@@ -33,6 +36,7 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "typescript": "^5.5.3",
-    "vite": "^5.3.1"
+    "vite": "^5.3.1",
+    "wrangler": "^4.56.0"
   }
 }
