@@ -1,0 +1,62 @@
+{
+  // Cloudflare Worker configuration for MedicalScribe
+  "name": "voither-medicalscribe",
+  "main": "worker/index.ts",
+  "compatibility_date": "2024-12-24",
+  "compatibility_flags": ["nodejs_compat"],
+  
+  // Environment variables (set these in Cloudflare dashboard or via wrangler secret)
+  "vars": {
+    "ENVIRONMENT": "production"
+  },
+  
+  // Bindings for Cloudflare services
+  // Add these as needed:
+  // - KV for session storage
+  // - D1 for SQL database
+  // - R2 for file storage
+  // - Durable Objects for real-time features
+  "kv_namespaces": [
+    {
+      "binding": "SESSIONS_KV",
+      "id": "YOUR_KV_NAMESPACE_ID",
+      "preview_id": "YOUR_PREVIEW_KV_NAMESPACE_ID"
+    }
+  ],
+  
+  // For D1 database (MongoDB replacement)
+  // "d1_databases": [
+  //   {
+  //     "binding": "DB",
+  //     "database_name": "medicalscribe-db",
+  //     "database_id": "YOUR_DATABASE_ID"
+  //   }
+  // ],
+  
+  // For R2 storage (Blob Storage replacement)
+  // "r2_buckets": [
+  //   {
+  //     "binding": "AUDIO_STORAGE",
+  //     "bucket_name": "medicalscribe-audio",
+  //     "preview_bucket_name": "medicalscribe-audio-preview"
+  //   }
+  // ],
+  
+  // Routes for production deployment
+  // "routes": [
+  //   {
+  //     "pattern": "api.yourdomain.com/*",
+  //     "zone_name": "yourdomain.com"
+  //   }
+  // ],
+  
+  // Worker limits
+  "limits": {
+    "cpu_ms": 50
+  },
+  
+  // Build configuration
+  "build": {
+    "command": "npm run build:worker"
+  }
+}
